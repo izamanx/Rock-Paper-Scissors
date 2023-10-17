@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>RPSGame</title>
+</head>
+
+<body>
+    <!-- score-panel -->
+    <div class="header part">
+        <div class="score-panel">
+            <div class="game-title">
+                <h3>ROCK</h3>
+                <h3>PAPER</h3>
+                <h3>SCISSORS</h3>
+            </div>
+            <div class="score-section">
+                <div class="computer-score">
+                    <h4>COMPUTER<br>SCORE</h4>
+                    <h3>0</h3>
+                </div>
+                <div class="user-score">
+                    <h4>YOUR <br>SCORE</h4>
+                    <h3>0</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- main-page -->
+
+        <div class="main-page">
+            <div class="lines"></div>
+            <div class="options">
+                <div class="option rock" id="rock" onclick="Process('rock')">
+                    <img src="rock.png" alt="rock">
+                </div>
+                <div class="option scissors" id="scissors" onclick="Process('scissors')">
+                    <img src="Scissor.png" alt="scissors">
+                </div>
+                <div class="option paper" id="paper" onclick="Process('paper')">
+                    <img src="paper.png" alt="paper">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- result-page -->
+
+    <div class="result-page part">
+        <div class="result-container ">
+            <div class="User-Picked">
+                <div class="Ellipse-User"></div>
+                <h2>YOU PICKED</h2>
+                <div id="userChoice" class="paper"><img src="paper.png"></div>
+            </div>
+            <div class="Conclusion">
+                <h1>YOU WIN</h1>
+                <h3>AGAINST PC</h3>
+                <button class="play-again" onclick="restart()">PLAY AGAIN</button>
+            </div>
+            <div class="PC-Picked">
+                <div class="Ellipse-PC"></div>
+                <h2>PC PICKED</h2>
+                <div id="PCChoice" class="scissors"><img src="Scissor.png"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- hurray-page -->
+
+    <div class="hurray-page">
+        <div class="star"><img src="Group 5.png"></div>
+        <div class="cup"><img src="cup.png"></div>
+        <h1>HURRAY!!</h1>
+        <h2>YOU WON THE GAME</h2>
+        <button class="play-again" onclick="restart()">PLAY AGAIN</button>
+    </div>
+
+        <!-- game-rules -->
+
+        <div class="rules-info part">
+            <h1>Game Rules</h1>
+            <ul class="game-rules">
+                <li>🟨 Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+                <li>🟨 Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock,
+                    paper,
+                    scissors.”</li>
+                <li>🟨 Use rock, paper, scissors to settle minor decisions or simply play to pass the time.</li>
+                <li>🟨 If both players lay down the same hand, each player lays down another hand.</li>
+            </ul>
+            <button class="exit-rules-info">X</button>
+        </div>
+        
+    <!-- buttons -->
+    <div class="footer">
+        <button class="reset">🔄</button>
+        <button class="rulesBtn">RULES</button>
+        <button class="nextBtn" onclick="Next()">NEXT</button>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
+
+
+<!-- Done by zaman -->

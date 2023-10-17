@@ -1,0 +1,465 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #8CC461;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3em;
+}
+
+.part {
+  display: none;
+}
+
+.score-panel {
+  display: flex;
+  justify-content: space-between;
+  height: 9.3rem;
+  width: 43.7rem;
+  border-radius: 13px;
+  border: 4px solid white;
+}
+
+.game-title {
+  color: white;
+  font: 600 1.8rem Roboto;
+  letter-spacing: .1em;
+  margin: 10px 0px 0px 20px;
+}
+
+.score-section {
+  display: flex;
+  align-items: center;
+}
+
+.computer-score,
+.user-score {
+  height: 7.5em;
+  width: 8.1em;
+  background-color: white;
+  margin: 1.25em;
+  text-align: center;
+  border-radius: 10px;
+}
+.computer-score h4,
+.user-score h4 {
+  color: rgba(101, 101, 101, 1);
+  font: 600 1rem Roboto;
+  letter-spacing: .1em;
+  margin-top: .6em;
+}
+
+.computer-score h3,
+.user-score h3 {
+  font: 700 3.7rem Roboto;
+  color: rgba(37, 37, 37, 1);
+  text-align: center;
+}
+
+.options {
+  height: 15.6em;
+  width: 25em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 4.2em;
+}
+
+.option {
+  cursor: pointer;
+}
+
+.rock img,
+.paper img,
+.scissors img {
+  position: relative;
+}
+
+.rock img {
+  left: 2.5em;
+  top: 2.75em;
+}
+
+.paper img,
+.scissors img  {
+  left: 2.9em;
+  top: 2.8em;
+}
+
+.scissors,
+.paper,
+.rock{
+  height: 10em;
+  width: 10em;
+}
+
+.rock {
+  background-image: url('rockbg.png');
+  margin-right: 5em;
+  margin-bottom: 2.5em;
+}
+
+.paper {
+  background-image: url('paperbg.png');
+}
+
+.scissors {
+  background-image: url('Scissorbg.png');
+  margin-bottom: 2px;
+}
+
+
+.lines,
+.lines::before,
+.lines::after{
+  height: 1.12em;
+  width: 7.5em;
+  background: rgba(0, 0, 0, 0.64);
+  z-index: -1;
+}
+
+.lines {
+  position: relative;
+  top: 10.3em;
+  right: .06em;
+  left: 9em;
+}
+
+.lines::before {
+  content: '';
+  position: absolute;
+  top: 6.25em;
+  left: 4.3em;
+  transform: rotate(120deg);
+}
+
+.lines::after {
+  content: '';
+  position: absolute;
+  top: 6.25em;
+  right: 4.3em;
+  transform: rotate(-120deg);
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 3em;
+  margin-top: 4em;
+}
+
+.nextBtn,
+.rulesBtn {
+  height: 2.3em;
+  width: 5.7em;
+  border-radius: 10px;
+  border: 2px solid white;
+  background: rgba(217, 217, 217, 0);
+  font: 600 1.2rem Roboto;
+  color: white;
+  letter-spacing: .1em;
+  cursor: pointer;
+
+}
+
+.rulesBtn {
+  margin-right: .8em
+}
+
+.rules-info {
+  height: 21.8em;
+  width: 18.7em;
+  border-radius: 13px;
+  border: 7px solid white;
+  background: #004429;
+  position: absolute;
+  top: 17.1em;
+  left: 64.6em;
+}
+
+.rules-info h1 {
+  padding: 20px 20px 0px 20px;
+  text-align: center;
+  color: white;
+  font: 500 1.8em Roboto;
+}
+
+.game-rules {
+  padding: 1.25em;
+}
+
+.game-rules li {
+  font: 400 .89rem Roboto;
+  color: white;
+  list-style-type: none;
+  margin-bottom: 1em;
+}
+
+
+.exit-rules-info {
+  background-image: url('exit.png');
+  background-color: Transparent;
+  border: none;
+  height: 1.87em;
+  width: 1.87em;
+  position: absolute;
+  bottom: 9.6em;
+  left: 7.8em;
+  color: white;
+  font: 500 2rem Roboto;
+  cursor: pointer;
+}
+
+
+.Ellipse-User,
+.Ellipse-User::before,
+.Ellipse-User::after,
+.Ellipse-PC,
+.Ellipse-PC::before,
+.Ellipse-PC::after
+{
+  position: absolute;
+  border-radius: 350px;
+}
+
+.Ellipse-User,
+.Ellipse-PC {
+  top: 20.6em;
+  z-index: -1;
+  height: 14em;
+  width: 14em;
+  background-color: rgba(59, 103, 32, 1);
+}
+
+.Ellipse-User::before,
+.Ellipse-PC::before {
+  content: '';
+  bottom: -1.5em;
+  left: -1.5em;
+  width: 17.2em;
+  height: 17.2em;
+  z-index: -2;
+  background-color: rgba(29, 168, 43, 0.79);
+}
+
+.Ellipse-User::after,
+.Ellipse-PC::after{
+  content: '';
+  bottom: -3em;
+  left: -2.9em;
+  z-index: -3;
+  width: 20.5em;
+  height: 20.5em;
+  background-color: rgba(46, 154, 37, 0.39);
+  box-shadow: 0px 1px 62px 0px rgba(0, 0, 0, 0.13);
+}
+
+
+.Ellipse-User {
+  left: 20em;
+  pointer-events: none;
+}
+
+.Ellipse-PC {
+  right: 19.8em;
+  pointer-events: none;
+}
+
+.result-container {
+  height: 15.6em;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 6.1em;
+  padding: 0em 22em 0em 22em;
+}
+
+.User-Picked h2,
+.PC-Picked h2 {
+  color: white;
+  font-family: roboto;
+  font-size: 1rem;
+  letter-spacing: .1em;
+  text-align: center;
+  margin-bottom: 1.25em;
+}
+
+
+.Conclusion {
+  color: white;
+  font: 700 1rem Roboto;
+  text-align: center;
+  letter-spacing: .1em;
+  margin: 9em 5em 0em 5em;
+}
+
+
+.play-again {
+  position: absolute;
+  bottom: 40px;
+  left: 42.5em;
+  background-color: white;
+  height: 3.4em;
+  width: 10em;
+  border-radius: 9px;
+  border: 1px solid white;
+  color: #6b6b6b;
+  font: 600 .9rem Roboto;
+  letter-spacing: .1em;
+  margin-top:1.3em;
+  cursor: pointer;
+}
+
+#rock img {
+  left: 2.5em;
+  top: 2.9em;
+}
+
+#scissors img {
+  left: 3.8em;
+  top: 3.1em;
+}
+
+.hurray-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 11.8em;
+}
+
+.star {
+  position: absolute;
+  top: 4em;
+}
+
+.cup img {
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+
+.hurray-page h1 {
+  font: 600 3.75rem Roboto;
+  color: #fff;
+  letter-spacing: .1em;
+  margin-bottom: .1em;
+}
+
+.hurray-page h2 {
+  font: 600 2.1rem Roboto;
+  color: #fff;
+  letter-spacing: .1em;
+}
+
+
+.hurray-page .footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 0.9em;
+}
+
+.reset {
+  font-size: 2rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+margin-right: .3em;
+}
+
+#userChoice,
+#PCChoice{
+  pointer-events: none;
+}
+
+@media (max-width: 600px) {
+  .header{
+    width: 100vw;
+  }
+  .score-panel {
+    width: 90%;
+  }
+
+  .game-title {
+    font: 600 1.5rem Roboto;
+    margin: 20px 0px 0px 15px;
+  }
+  
+.computer-score,
+.user-score {
+  height: 58%;
+  width: 17vw;
+  margin: .3em;
+}
+.user-score{
+  margin-right: 1em;
+}
+.computer-score h4,
+.user-score h4 {
+  font: 600 .75rem Roboto;
+  margin-top: .9em;
+}
+
+
+.computer-score h3,
+.user-score h3 {
+  font: 700 2rem Roboto; 
+}
+
+.options {
+  height: 20.2em;
+  width: 25em;
+  margin-top: 20px;
+}
+.lines {
+  top: 7.5em;
+}
+
+.result-container{
+  height: 15.6em;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 6em;
+  padding: 0em 2em 0em 1em;
+}
+.Conclusion {
+  font-size: .5rem;
+  margin: 15em 5em 0em 1em;
+}
+.Ellipse-User {
+  left: -0.8em;
+  pointer-events: none;
+}
+
+.Ellipse-PC {
+  right: .01em;
+}
+.play-again {
+  bottom: 5em;
+  left: 12em;
+  height: 3.4em;
+  width: 10em;
+  font: 600 .9rem Roboto;
+}
+.rules-info {
+  top: 14em;
+  left: 6em;
+}
+}
+
+
+
+/* done by zaman */
