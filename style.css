@@ -382,20 +382,20 @@ body {
   }
 
   .score-panel {
-    height: 8em;
-    width: 23em;
-    margin-left: 1.5em;
+    height: 7em;
+    width: 19em;
+    margin-left: 1em;
   }
 
   .game-title {
-    font: 600 1.2rem Roboto;
-    margin: 20px 0px 0px 15px;
+    font: 600 .8rem Roboto;
+    margin: 2.1em 0em 0em .9em;
   }
 
   .computer-score,
   .user-score {
-    height: 5em;
-    width: 5.5em;
+    height: 4em;
+    width: 4.5em;
     margin: 0.1em 0.4em 0em 0.3em;
   }
 
@@ -405,26 +405,26 @@ body {
 
   .computer-score h4,
   .user-score h4 {
-    font: 600 0.7rem Roboto;
-    padding-top: 0.5em;
+    font: 600 0.5rem Roboto;
+    padding-top: 0.7em;
   }
 
   .computer-score h3,
   .user-score h3 {
-    font: 700 1.7rem Roboto;
+    font: 700 1.4rem Roboto;
     padding-top: 0.1em;
   }
 
   .options {
     height: 15.6em;
-    width: 27.3em;
+    width: 20.2em;
     padding-left: 2em;
     margin-top: 3.2em;
   }
 
   .lines {
-    top: 7.7em;
-    left: 9em;
+    top: 5.5em;
+    left: 6em;
   }
 
   .lines::before {
@@ -440,7 +440,7 @@ body {
   .lines,
   .lines::before,
   .lines::after {
-    height: 1em;
+    height: .9em;
     background-repeat: no-repeat;
   }
 
@@ -448,43 +448,45 @@ body {
   .paper,
   .rock {
     background-size: 80%;
-    height: 10em;
-    width: 10em;
+    height: 8em;
+    width: 8em;
     margin: 0px;
     background-repeat: no-repeat;
   }
 
   #rock img {
-    left: 1.7em;
-    top: 2.1em;
-    width: 4.5em;
+    left: 1.4em;
+    top: 1.8em;
+    width: 3.5em;
   }
 
   #paper img {
-    left: 1.8em;
-    top: 1.7em;
-    width: 4.5em;
+    left: 1.6em;
+    top: 1.4em;
+    width: 3.5em;
   }
 
   #scissors img {
-    width: 2.8em;
-    left: 2.8em;
-    top: 2.1em;
+    width: 2em;
+    left: 2.4em;
+    top: 1.8em;
   }
 
   .result-container {
     height: 15.6em;
-    width: 25.9rem;
-    margin: 7em 0em 8em 0em;
-    padding: 0em 1.1em 0em 3em;
+    width: 20.6em;
+    margin: 5em 0em 6em 0em;
+    padding: 0em .2em 0em 2em;
   }
 
   .Conclusion {
+    height:26em;
     width: 20em;
     position: absolute;
     font-size: 0.7rem;
-    top: 20em;
-    left: 8em;
+    top: 17em;
+    left: 5em;
+    padding-top:1em;
     margin: 0em;
   }
 
@@ -495,81 +497,81 @@ body {
   }
 
   .Ellipse-User {
-    left: 3.2em;
+    left: 2em;
     pointer-events: none;
   }
 
   .Ellipse-PC {
     position: fixed;
-    right: 3.2em;
+    right: 13em;
   }
 
   .Ellipse-User,
   .Ellipse-PC {
-    top: 22.1em;
-    height: 7.7em;
-    width: 7.7em;
+    top: 20em;
+    height: 6.5em;
+    width: 6.5em;
   }
 
   .Ellipse-User::before,
   .Ellipse-PC::before {
-    width: 10.7em;
-    height: 10.7em;
+    width: 9.5em;
+    height: 9.5em;
   }
 
   .Ellipse-User::after,
   .Ellipse-PC::after {
-    width: 14em;
-    height: 14em;
+    width: 12.8em;
+    height: 12.8em;
   }
 
   .play-again {
-    margin-top: 20em;
-    margin-left: 2em;
+    margin-top: 17em;
+    margin-left: .1em;
   }
 
   .footer {
-    width: 18.2em;
+    width: 16.6em;
     justify-content: normal;
-    margin: 10em 0em 0em 6em;
+    margin: 3em 0em 0em 4em;
   }
 
   .rules-info {
-    top: 14em;
-    left: 4em;
+    top: 13em;
+    left: 1em; 
   }
 
   .hurray-page {
-    width: 24.4em;
+    width: 20.4em;
     align-items: normal;
-    margin-top: 11.8em;
-    margin-bottom: -7em;
+    margin-top: 10em;
+    margin-bottom: -1em;
     padding-left: 6.5em;
   }
 
   .star img {
-    width: 22em;
+    width: 18em;
     position: absolute;
-    top: 3em;
+    top: 1em;
     left: -4.8em;
   }
 
   .cup img {
-    width: 10em;
-    margin-bottom: 1.8em;
-    margin-left: 1.2em;
+    width: 8em;
+    margin-bottom: 1.5em;
+    margin-left: .1em;
   }
 
   .hurray-page h1 {
-    font: 600 3rem Roboto;
+    font: 600 2rem Roboto;
     margin-bottom: 0.2em;
     margin-left: -.5em;
   }
 
   .hurray-page h2 {
-    font: 600 1rem Roboto;
-    margin-left: .6em;
-    margin-bottom: -15em;
+    font: 600 .7rem Roboto;
+    margin-left: .5em;
+    margin-bottom: -19em;
 
   }
 
