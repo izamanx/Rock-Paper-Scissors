@@ -383,7 +383,7 @@ body {
 
   .score-panel {
     height: 8em;
-    width: 26em;
+    width: 23em;
     margin-left: 1.5em;
   }
 
@@ -417,14 +417,14 @@ body {
 
   .options {
     height: 15.6em;
-    width: 29em;
+    width: 27.3em;
     padding-left: 2em;
     margin-top: 3.2em;
   }
 
   .lines {
     top: 7.7em;
-    left: 10.1em;
+    left: 9em;
   }
 
   .lines::before {
@@ -474,9 +474,9 @@ body {
 
   .result-container {
     height: 15.6em;
-    width: 32rem;
-    margin: 7em 0em 8em;
-    padding: 0em 4em;
+    width: 25.9rem;
+    margin: 7em 0em 8em 0em;
+    padding: 0em 1.1em 0em 3em;
   }
 
   .Conclusion {
@@ -484,7 +484,7 @@ body {
     position: absolute;
     font-size: 0.7rem;
     top: 20em;
-    left: 11em;
+    left: 8em;
     margin: 0em;
   }
 
@@ -501,26 +501,26 @@ body {
 
   .Ellipse-PC {
     position: fixed;
-    right: 5.3em;
+    right: 3.2em;
   }
 
   .Ellipse-User,
   .Ellipse-PC {
-    top: 21.2em;
-    height: 9.5em;
-    width: 9.5em;
+    top: 22.1em;
+    height: 7.7em;
+    width: 7.7em;
   }
 
   .Ellipse-User::before,
   .Ellipse-PC::before {
-    width: 12.7em;
-    height: 12.7em;
+    width: 10.7em;
+    height: 10.7em;
   }
 
   .Ellipse-User::after,
   .Ellipse-PC::after {
-    width: 16em;
-    height: 16em;
+    width: 14em;
+    height: 14em;
   }
 
   .play-again {
@@ -529,18 +529,18 @@ body {
   }
 
   .footer {
-    width: 100vw;
+    width: 18.2em;
     justify-content: normal;
     margin: 10em 0em 0em 6em;
   }
 
   .rules-info {
     top: 14em;
-    left: 6em;
+    left: 4em;
   }
 
   .hurray-page {
-    width: 24.8em;
+    width: 24.4em;
     align-items: normal;
     margin-top: 11.8em;
     margin-bottom: -7em;
