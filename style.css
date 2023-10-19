@@ -1,13 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
 
 * {
-  padding: 0;
-  margin: 0;
+  padding: 0px;
+  margin: 0px;
   box-sizing: border-box;
 }
 
 body {
-  background-color: #8CC461;
+  background-color: rgb(140, 196, 97);
 }
 
 .header {
@@ -34,7 +34,7 @@ body {
 .game-title {
   color: white;
   font: 600 1.8rem Roboto;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
   margin: 10px 0px 0px 20px;
 }
 
@@ -52,18 +52,19 @@ body {
   text-align: center;
   border-radius: 10px;
 }
+
 .computer-score h4,
 .user-score h4 {
-  color: rgba(101, 101, 101, 1);
+  color: rgb(101, 101, 101);
   font: 600 1rem Roboto;
-  letter-spacing: .1em;
-  margin-top: .6em;
+  letter-spacing: 0.1em;
+  margin-top: 0.6em;
 }
 
 .computer-score h3,
 .user-score h3 {
   font: 700 3.7rem Roboto;
-  color: rgba(37, 37, 37, 1);
+  color: rgb(37, 37, 37);
   text-align: center;
 }
 
@@ -92,37 +93,36 @@ body {
 }
 
 .paper img,
-.scissors img  {
+.scissors img {
   left: 2.9em;
   top: 2.8em;
 }
 
 .scissors,
 .paper,
-.rock{
+.rock {
   height: 10em;
   width: 10em;
 }
 
 .rock {
-  background-image: url('rockbg.png');
+  background-image: url("rockbg.png");
   margin-right: 5em;
   margin-bottom: 2.5em;
 }
 
 .paper {
-  background-image: url('paperbg.png');
+  background-image: url("paperbg.png");
 }
 
 .scissors {
-  background-image: url('Scissorbg.png');
+  background-image: url("Scissorbg.png");
   margin-bottom: 2px;
 }
 
-
 .lines,
 .lines::before,
-.lines::after{
+.lines::after {
   height: 1.12em;
   width: 7.5em;
   background: rgba(0, 0, 0, 0.64);
@@ -132,12 +132,12 @@ body {
 .lines {
   position: relative;
   top: 10.3em;
-  right: .06em;
+  right: 0.06em;
   left: 9em;
 }
 
 .lines::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 6.25em;
   left: 4.3em;
@@ -145,7 +145,7 @@ body {
 }
 
 .lines::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 6.25em;
   right: 4.3em;
@@ -155,8 +155,8 @@ body {
 .footer {
   display: flex;
   justify-content: flex-end;
-  margin-right: 3em;
-  margin-top: 4em;
+  margin-right: 4em;
+  margin-top: 2em;
 }
 
 .nextBtn,
@@ -168,13 +168,12 @@ body {
   background: rgba(217, 217, 217, 0);
   font: 600 1.2rem Roboto;
   color: white;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
   cursor: pointer;
-
 }
 
 .rulesBtn {
-  margin-right: .8em
+  margin-right: 0.8em;
 }
 
 .rules-info {
@@ -182,14 +181,14 @@ body {
   width: 18.7em;
   border-radius: 13px;
   border: 7px solid white;
-  background: #004429;
+  background: rgb(0, 68, 41);
   position: absolute;
   top: 17.1em;
   left: 64.6em;
 }
 
 .rules-info h1 {
-  padding: 20px 20px 0px 20px;
+  padding: 20px 20px 0px;
   text-align: center;
   color: white;
   font: 500 1.8em Roboto;
@@ -200,16 +199,15 @@ body {
 }
 
 .game-rules li {
-  font: 400 .89rem Roboto;
+  font: 400 0.89rem Roboto;
   color: white;
   list-style-type: none;
   margin-bottom: 1em;
 }
 
-
 .exit-rules-info {
-  background-image: url('exit.png');
-  background-color: Transparent;
+  background-image: url("exit.png");
+  background-color: transparent;
   border: none;
   height: 1.87em;
   width: 1.87em;
@@ -221,14 +219,12 @@ body {
   cursor: pointer;
 }
 
-
 .Ellipse-User,
 .Ellipse-User::before,
 .Ellipse-User::after,
 .Ellipse-PC,
 .Ellipse-PC::before,
-.Ellipse-PC::after
-{
+.Ellipse-PC::after {
   position: absolute;
   border-radius: 350px;
 }
@@ -239,12 +235,12 @@ body {
   z-index: -1;
   height: 14em;
   width: 14em;
-  background-color: rgba(59, 103, 32, 1);
+  background-color: rgb(59, 103, 32);
 }
 
 .Ellipse-User::before,
 .Ellipse-PC::before {
-  content: '';
+  content: "";
   bottom: -1.5em;
   left: -1.5em;
   width: 17.2em;
@@ -254,17 +250,16 @@ body {
 }
 
 .Ellipse-User::after,
-.Ellipse-PC::after{
-  content: '';
+.Ellipse-PC::after {
+  content: "";
   bottom: -3em;
   left: -2.9em;
   z-index: -3;
   width: 20.5em;
   height: 20.5em;
   background-color: rgba(46, 154, 37, 0.39);
-  box-shadow: 0px 1px 62px 0px rgba(0, 0, 0, 0.13);
+  box-shadow: rgba(0, 0, 0, 0.13) 0px 1px 62px 0px;
 }
-
 
 .Ellipse-User {
   left: 20em;
@@ -283,7 +278,7 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-top: 6.1em;
-  padding: 0em 22em 0em 22em;
+  padding: 0em 22em;
 }
 
 .User-Picked h2,
@@ -291,34 +286,29 @@ body {
   color: white;
   font-family: roboto;
   font-size: 1rem;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
   text-align: center;
   margin-bottom: 1.25em;
 }
-
 
 .Conclusion {
   color: white;
   font: 700 1rem Roboto;
   text-align: center;
-  letter-spacing: .1em;
-  margin: 9em 5em 0em 5em;
+  letter-spacing: 0.1em;
+  margin: 10em 5em 1em 5em;
 }
 
-
 .play-again {
-  position: absolute;
-  bottom: 40px;
-  left: 42.5em;
   background-color: white;
-  height: 3.4em;
-  width: 10em;
+  height: 3em;
+  width: 9em;
   border-radius: 9px;
   border: 1px solid white;
-  color: #6b6b6b;
-  font: 600 .9rem Roboto;
-  letter-spacing: .1em;
-  margin-top:1.3em;
+  color: rgb(107, 107, 107);
+  font: 600 0.9rem Roboto;
+  letter-spacing: 0.1em;
+  margin-top: 1.3em;
   cursor: pointer;
 }
 
@@ -351,18 +341,19 @@ body {
 }
 
 .hurray-page h1 {
-  font: 600 3.75rem Roboto;
-  color: #fff;
-  letter-spacing: .1em;
-  margin-bottom: .1em;
+  font: 600 3rem Roboto;
+  color: rgb(255, 255, 255);
+  letter-spacing: 0.1em;
+  margin-left: .4em;
+  margin-bottom: 0.1em;
 }
 
 .hurray-page h2 {
-  font: 600 2.1rem Roboto;
-  color: #fff;
-  letter-spacing: .1em;
+  font: 600 1rem Roboto;
+  color: rgb(255, 255, 255);
+  letter-spacing: 0.1em;
+  margin-left: .4em;
 }
-
 
 .hurray-page .footer {
   display: flex;
@@ -375,91 +366,214 @@ body {
   background-color: transparent;
   border: none;
   cursor: pointer;
-margin-right: .3em;
+  margin-right: 0.3em;
 }
 
 #userChoice,
-#PCChoice{
+#PCChoice {
   pointer-events: none;
 }
 
 @media (max-width: 600px) {
-  .header{
-    width: 100vw;
+  .header {
+    justify-content: normal;
+    align-items: normal;
+    margin-top: 3em;
   }
+
   .score-panel {
-    width: 90%;
+    height: 8em;
+    width: 26em;
+    margin-left: 1.5em;
   }
 
   .game-title {
-    font: 600 1.5rem Roboto;
+    font: 600 1.2rem Roboto;
     margin: 20px 0px 0px 15px;
   }
-  
-.computer-score,
-.user-score {
-  height: 58%;
-  width: 17vw;
-  margin: .3em;
-}
-.user-score{
-  margin-right: 1em;
-}
-.computer-score h4,
-.user-score h4 {
-  font: 600 .75rem Roboto;
-  margin-top: .9em;
-}
 
+  .computer-score,
+  .user-score {
+    height: 5em;
+    width: 5.5em;
+    margin: 0.1em 0.4em 0em 0.3em;
+  }
 
-.computer-score h3,
-.user-score h3 {
-  font: 700 2rem Roboto; 
-}
+  .user-score {
+    margin-right: 1.3em;
+  }
 
-.options {
-  height: 20.2em;
-  width: 25em;
-  margin-top: 20px;
-}
-.lines {
-  top: 7.5em;
-}
+  .computer-score h4,
+  .user-score h4 {
+    font: 600 0.7rem Roboto;
+    padding-top: 0.5em;
+  }
 
-.result-container{
-  height: 15.6em;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 6em;
-  padding: 0em 2em 0em 1em;
-}
-.Conclusion {
-  font-size: .5rem;
-  margin: 15em 5em 0em 1em;
-}
-.Ellipse-User {
-  left: -0.8em;
-  pointer-events: none;
-}
+  .computer-score h3,
+  .user-score h3 {
+    font: 700 1.7rem Roboto;
+    padding-top: 0.1em;
+  }
 
-.Ellipse-PC {
-  right: .01em;
-}
-.play-again {
-  bottom: 5em;
-  left: 12em;
-  height: 3.4em;
-  width: 10em;
-  font: 600 .9rem Roboto;
-}
-.rules-info {
-  top: 14em;
-  left: 6em;
-}
-}
+  .options {
+    height: 15.6em;
+    width: 29em;
+    padding-left: 2em;
+    margin-top: 3.2em;
+  }
 
+  .lines {
+    top: 7.7em;
+    left: 10.1em;
+  }
+
+  .lines::before {
+    top: 6.25em;
+    left: 4em;
+  }
+
+  .lines::after {
+    top: 6.25em;
+    right: 3em;
+  }
+
+  .lines,
+  .lines::before,
+  .lines::after {
+    height: 1em;
+    background-repeat: no-repeat;
+  }
+
+  .scissors,
+  .paper,
+  .rock {
+    background-size: 80%;
+    height: 10em;
+    width: 10em;
+    margin: 0px;
+    background-repeat: no-repeat;
+  }
+
+  #rock img {
+    left: 1.7em;
+    top: 2.1em;
+    width: 4.5em;
+  }
+
+  #paper img {
+    left: 1.8em;
+    top: 1.7em;
+    width: 4.5em;
+  }
+
+  #scissors img {
+    width: 2.8em;
+    left: 2.8em;
+    top: 2.1em;
+  }
+
+  .result-container {
+    height: 15.6em;
+    width: 32rem;
+    margin: 7em 0em 8em;
+    padding: 0em 4em;
+  }
+
+  .Conclusion {
+    width: 20em;
+    position: absolute;
+    font-size: 0.7rem;
+    top: 20em;
+    left: 11em;
+    margin: 0em;
+  }
+
+  .User-Picked h2,
+  .PC-Picked h2 {
+    margin-bottom: 1.25em;
+    margin-left: -1.5em;
+  }
+
+  .Ellipse-User {
+    left: 3.2em;
+    pointer-events: none;
+  }
+
+  .Ellipse-PC {
+    position: fixed;
+    right: 5.3em;
+  }
+
+  .Ellipse-User,
+  .Ellipse-PC {
+    top: 21.2em;
+    height: 9.5em;
+    width: 9.5em;
+  }
+
+  .Ellipse-User::before,
+  .Ellipse-PC::before {
+    width: 12.7em;
+    height: 12.7em;
+  }
+
+  .Ellipse-User::after,
+  .Ellipse-PC::after {
+    width: 16em;
+    height: 16em;
+  }
+
+  .play-again {
+    margin-top: 20em;
+    margin-left: 2em;
+  }
+
+  .footer {
+    width: 100vw;
+    justify-content: normal;
+    margin: 10em 0em 0em 6em;
+  }
+
+  .rules-info {
+    top: 14em;
+    left: 6em;
+  }
+
+  .hurray-page {
+    width: 24.8em;
+    align-items: normal;
+    margin-top: 11.8em;
+    margin-bottom: -7em;
+    padding-left: 6.5em;
+  }
+
+  .star img {
+    width: 22em;
+    position: absolute;
+    top: 3em;
+    left: -4.8em;
+  }
+
+  .cup img {
+    width: 10em;
+    margin-bottom: 1.8em;
+    margin-left: 1.2em;
+  }
+
+  .hurray-page h1 {
+    font: 600 3rem Roboto;
+    margin-bottom: 0.2em;
+    margin-left: -.5em;
+  }
+
+  .hurray-page h2 {
+    font: 600 1rem Roboto;
+    margin-left: .6em;
+    margin-bottom: -15em;
+
+  }
+
+}
 
 
 /* done by zaman */
